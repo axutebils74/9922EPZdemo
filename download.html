@@ -1,0 +1,178 @@
+<meta charset="UTF-8">
+<div id="div1"></div><br>
+<div id="div"></div><br>
+<div id="div2"></div>
+<script>
+window.onerror = window.onunhandledrejection = function(e){
+    div2.innerHTML =  "出现错误：" + (e.message||e.reason||e);
+}
+</script>
+<script src="epz.js"></script>
+<script src="jszip.js"></script>
+<script>
+var imgarr=[["image/upload/97a1ced70d3a380be668b1c675659d6f.png",127498,1872502],["image/upload/aa047ac99593a1f9d999113cd1595dfd.png",147354,1852646],["image/upload/79b84c1b55c9fdfedd02875719782011.png",112924,1887076],["image/upload/8abb66c2ead5fe826537f27346401a4a.png",185515,1814485],["image/upload/2da177df5189c230beec39699bc945b5.png",88439,1911561],["image/upload/14d22c3b255a9cd342c709b65d48f94f.png",19056,1980944],["image/upload/0d9b3f708a41958d55bec73a3cb684cc.png",28464,1971536],["image/upload/9b1ee37baaa8e58a4c7770d45c8ee07b.png",108080,1891920],["image/upload/2a29f5c88f6a13467ec2e807c2a7ccda.png",74294,1925706],["image/upload/6ed5433d1df55c33d8809e75aacdc021.png",202302,1797698],["image/upload/c2f057f393289fea2322df166bf315e5.png",27157,1972843],["image/upload/53f76e8c3098a0b98f68c1a9e0141f07.png",57905,1942095],["image/upload/0ff23d0a3ef9a4a1a290a3d8cb3b96ec.png",65848,1934152],["image/upload/7b017f2d02910b587d6e2e0b9d558eee.png",27207,1972793],["image/upload/240f71f8f8a83e422273ebc50aaed028.png",76277,1923723],["image/upload/7466e7d2542f4aa999dbe278045fb47a.png",48930,1951070],["image/upload/57cd31117b7dd3a1570ae3521bec256d.png",67224,1932776],["image/upload/b0f643f282a2bffc35dc6ed0d7f715f1.png",61977,1938023],["image/upload/73ab7865e9eca8b7e34251a6256d33bf.png",82048,1917952],["image/upload/375ce72d8c145b81af44fbf64890891a.png",136955,1863045],["image/upload/ab60942b68bc257b8bf8ea3bfc12237f.png",51870,1948130],["image/upload/ca64cfa0f7e9f8ef84d4b304c01792f8.png",63999,1936001],["image/upload/fa27625709ec51c59b6f36f2e02f9ef1.png",65335,1934665],["image/upload/38a2ccf6d8e978c44c5025de9632a3e8.png",112169,1887831],["image/upload/3fda896b0a0b19032066e11f41810f16.png",55750,1944250],["image/upload/57eb95367de2a745fc49f3fe9d1eca6d.png",187882,1812118],["image/upload/569196498ba8696b97ecb7d0e0d522cc.png",56853,1943147],["image/upload/b1397812e43b1d25d12aac0bbca1cb39.png",43300,1956700],["image/upload/d104e626626f46106ade88e799bb44cc.png",131339,1868661],["image/upload/f453f4ce7abb833756196bd37c0ce681.png",63100,1936900],["image/upload/258c16c0d0a751df20ead357e780edc9.png",97031,1902969],["image/upload/01478c9563b56a8bd15d1c7f96f3ac81.png",73554,1926446],["image/upload/69d8d3361f198e8e5bd1f5cc4b784120.png",178724,1821276],["image/upload/4221611b205b92113256ae83e4670f79.png",72051,1927949],["image/upload/7f7d6d92aa5d863e2c4180b221f82f24.png",75092,1924908],["image/upload/d010158d8f5e1ff1edd91078dfe59113.png",61705,1938295],["image/upload/376587b0ccf167b0862ce36efd56a1d9.png",166866,1833134],["image/upload/9a18d5eb2454173a4ff99eb83ad03375.png",129970,1870030],["image/upload/05750c2a42175838052ca267801cdf9d.png",93190,1906810],["image/upload/a7c82651eb180520e8dd3cffbc52c779.png",132021,1867979],["image/upload/7ac4ea12f027e00beccda0aa79da4e80.png",69623,1930377],["image/upload/76a8cc7e8a2e6031f48ca3dceb832e28.png",73276,1926724],["image/upload/6a8486286c72df6175b357b6fec0fb4f.png",221727,1778273],["image/upload/1d20d0f7089c66118e3d623e0b1fb75f.png",195628,1804372],["image/upload/df279e87e88074ed25bd24666b882484.png",105338,1894662],["image/upload/7ed3476efa5878076cf4ce29c2670349.png",74700,1925300],["image/upload/176c8bd655948cfe2bc0e29686cc0a1e.png",65043,1934957],["image/upload/47155d2cbaeb4d7eeeebcf17e8edf475.png",66119,1933881],["image/upload/eda904636f236764e16bc7281f9f6e73.png",52221,1947779],["image/upload/2ecca6acf798b70fc333427e7352b9ca.png",82930,1917070],["image/upload/26f3978ccf8fcc006925b2d7cfee438f.png",75647,1924353],["image/upload/d5247434e8561c1e73ec4bfbd94e2ad4.png",204284,1795716],["image/upload/32c5706a01fea26881b3a36043c25c68.png",67471,1932529],["image/upload/2802ae744f222fc524ad9a019990c1c0.png",79746,1920254],["image/upload/81b47349a82f5ba41540b86cb3cecfc9.png",131846,1868154],["image/upload/f26018e9b374eeee2363674094390387.png",76626,1923374],["image/upload/5e798a29cac7948a34eb325136ad537f.png",53987,1946013],["image/upload/321a76b1cac08b495db7de132eb3651c.png",56441,1943559],["image/upload/9662d8440fba63487c115ed8221288fd.png",69955,1930045],["image/upload/8d5b751292ea16bd05647a68fe0bd3b3.png",74440,1925560],["image/upload/bc9abea7401ca846721db2c5163ed65c.png",23226,1976774],["image/upload/e53dde85b01119c7c879cb5b4c621487.png",28501,1971499],["image/upload/a1755fdae5088f712486a505fb9f1861.png",62281,1937719],["image/upload/9e5c2fc4082de95d24d548b8ac0bd416.png",49063,1950937],["image/upload/0598ac1398827dd99232bf8b161566b0.png",199904,1800096],["image/upload/108b04c6c0b6f0cda05e6c71f3d1e84a.png",189469,1810531],["image/upload/89961226e306a906eddf34995b99ab24.png",66987,1933013],["image/upload/d833af586670f2cbeeb70cdb5214ec96.png",86205,1913795],["image/upload/a831fd23d2fcc266eb3ac84c3dcd26c1.png",166787,1833213],["image/upload/4c8989f1cbdc33819af3697069437bf8.png",48085,1951915],["image/upload/e9fcbf583de69db9e43f88a9fe0a55a6.png",146387,1853613],["image/upload/f337f2ab6ae09919c14d1993870c305a.png",82731,1917269],["image/upload/3cf888a6ba3187afab1392342a6b2fac.png",90300,1909700],["image/upload/6eacd194b344f9f6637830c7d63bf5ad.png",58908,1941092],["image/upload/b3a65bb148d1c28477c774d636f1680f.png",113151,1886849],["image/upload/1a602b1179ad2c5a5617b1480d516de7.png",186475,1813525],["image/upload/afadf693c9812c85223f4e5647ea7e99.png",48273,1951727],["image/upload/b5deec837eaea2e03dd9d58ac696cacd.png",68529,1931471],["image/upload/3d0b480f52dc26810f4780ca4b3d2b7f.png",63423,1936577],["image/upload/6962280e9462a42a5106d0a9beeac7e8.png",162707,1837293],["image/upload/25aef44fe04da7261dc620b331b97ed3.png",45201,1954799],["image/upload/5da1a295f3e608e2c6a6335105f09014.png",70951,1929049],["image/upload/4f4e913101826901355d9b2c3242511b.png",67325,1932675],["image/upload/ac0c666b27c7f197c084569baf7d5524.png",54802,1945198],["image/upload/b1714db502c4bff8e343a3edc92b834a.png",73508,1926492],["image/upload/038a141dce1670da3aee306bc4031e6d.png",224301,1775699],["image/upload/00306f4a86438564d5e7987a149a1a94.png",68811,1931189],["image/upload/4c1e68423f6418be3a02320f124ccdd1.png",79833,1920167],["image/upload/2a0b8c182b817229b9859e217bbb670c.png",25625,1974375],["image/upload/3593dfd664aaa707855f8a7062e13d64.png",88035,1911965],["image/upload/be1ea47f8e8173085d18032ed3a0864c.png",216220,1783780],["image/upload/ae486084c933d58976282aa8bc717c74.png",83966,1916034],["image/upload/2894bbbd4b75bc21b224823368dccca9.png",26205,1973795],["image/upload/da6d7757ee8c535dd97b0041d99d330a.png",214003,1785997],["image/upload/b7f7053c82d62e3d3b3df364a3248707.png",185272,1814728],["image/upload/4fb1e42841f67af48db2d110d58be468.png",61705,1938295],["image/upload/fd6f5c1c7386cb3b04f12bdf213c9330.png",81533,831461]]
+var xhr = new XMLHttpRequest
+xhr.open("GET",imgarr[0][0])
+xhr.responseType="arraybuffer"
+xhr.onload = function(){
+var epz = new EPZ(new Uint8Array(xhr.response.slice(127498)));
+epz.init(function(){
+    var acache = {
+        0:epz._uint8
+    }
+    var latin1 = { 338: 188, 339: 189, 352: 166, 353: 168, 376: 190, 381: 180, 382: 184, 8364: 164 }
+    function recoverU8(str) {
+        var bufView = new Uint8Array(str.length);
+        for (var i = 0, strLen = str.length; i < strLen; i++) {
+            var octet = str.charCodeAt(i);
+            if (latin1.hasOwnProperty(octet)) octet = latin1[octet]
+            bufView[i] = octet;
+            if(octet < 0 || 255 < octet) {
+                return util.encodeUTF8(str)
+            }
+        }
+        return bufView
+    }
+    var util = {
+        requestSync:function(e,i,j){
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", e, false);
+                xhr.overrideMimeType('text/plain; charset=ISO-8859-15');
+                xhr.send()
+                return recoverU8(xhr.response)
+        },request:function(e,fn,time){
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", e, true);
+                xhr.responseType="arraybuffer"
+                xhr.onload = function(){
+                    if(xhr.status < 400){
+                        fn(new Uint8Array(xhr.response))
+                    }else{
+                        div.innerHTML = "网络请求" + e +"错误，" + time +"s 后重新请求";
+                        setTimeout(function(){
+                            util.request(e,fn,time*2)
+                        },time)
+                    }
+                };
+                xhr.onerror = xhr.onabort = xhr.ontimeout = function(){
+                    div.innerHTML = "网络请求" + e +"错误，" + time +"s 后重新请求";
+                    setTimeout(function(){
+                            util.request(e,fn,time*2)
+                    },time)
+                }
+                xhr.send()
+        }
+    }
+    function toU8(){
+        var chunk =new Uint8Array(this.size);
+        var o = 0,p=this.start,q=this.size;
+        for(var k = 0;k<this.bin.length;k++){
+            var m = acache[this.bin[k]];
+            if(k == 0){
+                var z = m.subarray(p,p+this.size)
+                chunk.set(z);
+                q-=z.length
+                o+=z.length
+            }else if(k == this.bin.length-1){
+                chunk.set(m.subarray(0,q),o);
+            }else{
+                chunk.set(m,o);
+                q-=m.length;
+                o+=m.length
+            }
+        }
+        return chunk
+    }
+    function getArray(f){
+        for(var i = 0;i<f.bin.length;i++){
+            var m = f.bin[i]
+            if(!acache[m]){
+                var u = util.requestSync(imgarr[m][0]);
+                acache[m] = new Uint8Array(u.subarray(imgarr[m][1]))
+            }
+        }
+        return f.toU8()
+    }
+    var queue = [],lock = 0;
+    function cbk(){
+        if(lock || !queue.length) return
+        var o = queue.shift();
+        lock = 1
+        if(typeof o ==="function")  {
+            o();
+            lock=0;
+            cbk()
+        }else if(acache[o]){
+             lock=0;
+             cbk()
+        }else{
+            util.request(imgarr[o][0],function(u){
+                acache[o] = new Uint8Array(u.subarray(imgarr[o][1]))
+                lock=0;
+                cbk()
+            },1);
+        }
+    }
+    function getArrayAsync(f,fn){
+        for(var i = 0;i<f.bin.length;i++) queue.push(f.bin[i]);
+        queue.push(function(){
+            fn(f.toU8())
+        });
+        cbk()
+    }
+    var o = imgarr[0][2]
+        var arr = epz.arr
+        var start = arr[0].l
+        for(var i = 0,j=0;arr[i].l;i++){
+            arr[i].toU8 = toU8
+            arr[i].bin = [j];
+            arr[i].start = start;
+            start+=arr[i].size;
+            while(arr[i].u > o){
+                start-= imgarr[j][2];
+                o+= imgarr[++j][2];
+                arr[i].bin.push(j);
+            }
+            if(arr[i].u==o){j++;start=0}
+        }
+        epz.uint8 = function(n,fn){
+            var f = this._getFile(n);
+            if(this.isSync(fn)){
+                return this.method[f.method](getArray(f));
+            }else{
+                return typeof fn === "function" && getArrayAsync(f,function(e){
+                    fn(this.method[f.method](e));
+                }.bind(this))
+            }
+        }
+        var ii = 0;
+        var zip = new JSZip();
+        function callback(){
+            if(ii < epz.arr.length){
+                div.innerHTML = ""
+                div1.innerHTML = ii+ "/" + epz.arr.length +"  "+ epz.arr[ii].filename;
+                epz.uint8(ii,function(d){
+                    zip.file(epz.arr[ii].filename,d);
+                    ++ii
+                    setTimeout(callback,0)
+                })
+            }else{
+                zip.generateAsync({ type: "blob" }).then(function (blob) {
+                        div.innerHTML = ""
+                        div1.innerHTML = ii+ "/" + epz.arr.length +"  "+ epz.arr[ii-1].filename;
+                        var a = document.createElement('a');
+                        a.href = URL.createObjectURL(blob);
+                        a.download = '9922.zip'
+                        a.click();
+                });
+            }
+        }
+        callback()
+})
+}
+xhr.send()
+</script>
+<script>
+    
+</script>
+
